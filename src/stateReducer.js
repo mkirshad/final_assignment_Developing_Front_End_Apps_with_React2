@@ -2,8 +2,8 @@
 export const stateReducer = (
   state = { counter: 10, budget: 2000, remaining : 0, spent : 210, currency : '£', 
             departments : ['Marketing', 'Finance', 'Sales', 'Human Resource', 'IT'],
-            allocation: [{'department':'Marketing', 'allocation':50}, {'department':'Finance', 'allocation':300}, {'department':'Sales', 'allocation':50}, 
-                          {'department':'Human Resource', 'allocation':60}, 
+            allocation: [{'department':'Marketing', 'allocation':50}, {'department':'Finance', 'allocation':300}, {'department':'Sales', 'allocation':70}, 
+                          {'department':'Human Resource', 'allocation':40}, 
                           {'department':'IT', 'allocation':500}
                         ],
             message : ''

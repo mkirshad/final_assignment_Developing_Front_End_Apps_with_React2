@@ -23,8 +23,10 @@ export function setBudgetValue(budget, state){
   if (budget < state.spent) {
     return { type: 'ALLOCATION_ERROR', payload: {'message':'The value cannot reduce budget value lower than the spending '} };
   }
-else
+else {
+    // Rest API Call Over Here
     return { type: 'SET_BUDGET_VALUE', payload:{budget:budget, message:''} };
+  }
 }
 
 export function setBudgetAllocation(budgetAllocation, department, state){
@@ -36,7 +38,8 @@ export function setBudgetAllocation(budgetAllocation, department, state){
     else if(department === null || !isDepartmentFound){
       return { type: 'ALLOCATION_ERROR', payload: {'message':'Please select a department '} };
     }
-       else {
-        return { type: 'SET_BUDGET_ALLOCATION', payload: { budgetAllocation:budgetAllocation, department:department, message:'' } };
-      }
+    else {
+      // Rest API Call Over Here
+      return { type: 'SET_BUDGET_ALLOCATION', payload: { budgetAllocation:budgetAllocation, department:department, message:'' } };
+    }
 }

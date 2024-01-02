@@ -36,27 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.circle-button {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 0px;
-  font-size: 30px;
-  cursor: pointer;
-  border: 1px solid transparent; /* Set a transparent border to start */
-}
-
-.plus-button {
-  background-color: green;
-  color: white;
-  border-color: green; /* Match the border color to the background */
-}
-
-.minus-button {
-  background-color: red;
-  color: white;
-  border-color: red; /* Match the border color to the background */
-}

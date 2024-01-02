@@ -12,16 +12,15 @@ function BudgetInput({type, text, value, color, handleChange, listArr=[]}) {
   ]
   
   return (
-    <div key={uuidv4()} style={{
+    <div key={uuidv4()} className="parent-div" style={{
       padding: (type==='input')?'20px 0px': (type==='list')? '20px 0px' :'23px 0px', /* Set vertical and horizontal padding */
-      backgroundColor: color, /* Apply gray background to padding area */
-      borderRadius: '5px', /* Round corners with 10px radius */
+      backgroundColor: color, 
     }}>
     <span key={uuidv4()}>{text}</span>
     {type==='input'?
-    <input key={uuidv4()} type="number" value={value} style={{"width":"50%"}} onChange={(event)=>{handleChange(event.target.value)}} /> 
+    <input key={uuidv4()} className="child-input" type="number" value={value} onChange={(event)=>{handleChange(event.target.value)}} /> 
     : 
-    type === 'list' ? <><select key={uuidv4()} style={{paddingBottom:'5px'}} onChange={(event)=>{handleChange(event.target.value)}}>
+    type === 'list' ? <><select style={{backgroundColor: color, border: '0px solid transparent'}} key={uuidv4()} className="child-select" onChange={(event)=>{handleChange(event.target.value)}}>
     {options}
                 </select> <span key={uuidv4()}>{")"}</span></> :
     <span>{value}</span>

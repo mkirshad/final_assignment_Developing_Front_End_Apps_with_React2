@@ -1,0 +1,79 @@
+/* Styles for the main container rows */
+.container-row {
+    text-align: center;
+}
+
+.group-allocation-section {
+    text-align: left;
+}
+
+/* Styles for header rows */
+.header-row {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.header-row2 {
+    margin-top: '20px'; 
+    margin-bottom: '5px'; 
+}
+
+/* Styles for budget input columns */
+.budget-input-col {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.budget-input-col2 {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+/* Styles for input labels */
+.input-label {
+    background-color: #E2E3E5;
+    padding: 2px 10px;
+    border-radius: 5px;
+    padding-bottom: 6px;
+}
+
+/* Styles for select elements */
+.select-input {
+    padding-bottom: 5px;
+}
+
+/* Styles for buttons */
+.button-input {
+    background-color: #0B59C7;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: white;
+}
+
+.float-left {
+    float:left;
+}
+
+.with-80pc {
+    width: 80%;
+}
+
+
+/* Parent div class */
+.parent-div {
+    padding: 20px 0px; /* Default vertical padding */
+    background-color: var(--parent-bg-color, #E2E3E5); /* Default background color, customizable through a CSS variable */
+    border-radius: 5px; /* Round corners */
+}
+
+/* Child input class */
+.child-input {
+    width: 50%; /* Set width of input */
+    /* Add other styles for the input here */
+}
+
+/* Child select class */
+.child-select {
+    padding-bottom: 5px; /* Padding at the bottom */
+    /* Add other styles for the select here */
+}
